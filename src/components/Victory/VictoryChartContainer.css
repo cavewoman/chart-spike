@@ -1,0 +1,16 @@
+.VictoryChartContainer {
+  height: 400px;
+}
+
+.VictoryChartContainer__header {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  size: 24px;
+}
+
+.VictoryChartContainer__charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
