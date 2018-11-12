@@ -7,6 +7,7 @@
     "react": "^16.6.1",
     "react-chartjs": "^1.2.0",
     "react-dom": "^16.6.1",
+    "react-easy-chart": "^1.0.0",
     "react-scripts": "2.1.1",
     "rumble-charts": "^2.0.0",
     "victory": "^31.0.0"
