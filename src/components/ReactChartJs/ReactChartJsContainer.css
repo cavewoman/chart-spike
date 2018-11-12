@@ -1,0 +1,11 @@
+.ReactChartJsContainer__header {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  size: 24px;
+}
+
+.ReactChartJsContainer__charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
