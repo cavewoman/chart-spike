@@ -4,9 +4,9 @@ import './RumbleChartsContainer.css'
 
 export default function RumbleChartsContainer() {
   return (
-    <div className="RumbleChartsContainer">
-      <div className="RumbleChartsContainer__header">Rumble Charts</div>
-      <div className="RumbleChartsContainer__charts">
+    <div className="ChartContainer">
+      <div className="ChartContainer__header">Rumble Charts</div>
+      <div className="ChartContainer__charts">
         <BarChart />
       </div>
     </div>
