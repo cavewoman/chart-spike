@@ -3,11 +3,66 @@ import ReactDOM from 'react-dom'
 import { VictoryBar, VictoryChart, VictoryAxis } from 'victory'
 
 export default function BarChart() {
+  // const data = [
+  //   { quarter: 1, earnings: 13000 },
+  //   { quarter: 2, earnings: 16500 },
+  //   { quarter: 3, earnings: 14250 },
+  //   { quarter: 4, earnings: 19000 }
+  // ]
+
   const data = [
-    { quarter: 1, earnings: 13000 },
-    { quarter: 2, earnings: 16500 },
-    { quarter: 3, earnings: 14250 },
-    { quarter: 4, earnings: 19000 }
+    {
+      week: 0,
+      percentage: 0
+    },
+    {
+      week: 1,
+      percentage: 62
+    },
+    {
+      week: 2,
+      percentage: 24
+    },
+    {
+      week: 3,
+      percentage: 0
+    },
+    {
+      week: 4,
+      percentage: 0
+    },
+    {
+      week: 5,
+      percentage: 0
+    },
+    {
+      week: 6,
+      percentage: 0
+    },
+    {
+      week: 7,
+      percentage: 0
+    },
+    {
+      week: 8,
+      percentage: 0
+    },
+    {
+      week: 9,
+      percentage: 0
+    },
+    {
+      week: 10,
+      percentage: 0
+    },
+    {
+      week: 11,
+      percentage: 0
+    },
+    {
+      week: 12,
+      percentage: 0
+    }
   ]
 
   return (
@@ -15,20 +70,23 @@ export default function BarChart() {
       <VictoryAxis
         // tickValues specifies both the number of ticks and where
         // they are placed on the axis
-        tickValues={[1, 2, 3, 4]}
-        tickFormat={['Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4']}
+        // tickValues={y => `${y}`}
+        // tickFormat={y => `${y}`}
+        tickCount={data.length}
       />
       <VictoryAxis
         dependentAxis
         // tickFormat specifies how ticks should be displayed
-        tickFormat={x => `$${x / 1000}k`}
+        tickFormat={x => `${x}`}
+        domain={[0, 100]}
+
       />
       <VictoryBar
         data={data}
         // data accessor for x values
-        x="quarter"
+        x="week"
         // data accessor for y values
-        y="earnings"
+        y="percentage"
       />
     </VictoryChart>
   )
